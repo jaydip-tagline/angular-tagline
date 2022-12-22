@@ -59,52 +59,16 @@
                     style="font-weight: bolder; font-size: 60px;">{{services.title2}}</span> <br> {{services.title3}}</h1>
         </div>
 
-        <div class="divcontent divcontent2">
+        <div class="divcontent divcontent2" *ngFor="let service of servicelist">
             <div class="flex">
-                <img [src]="divcontent2.image">
-                <h2>{{divcontent2.title}}</h2>
+                <img [src]="service.image">
+                <h2>{{service.title}}</h2>
             </div>
-            <p>{{divcontent2.description}}</p>
-            <a href="#">{{divcontent2.button}}</a>
+            <p>{{service.description}}</p>
+            <a href="#">{{service.button}}</a>
         </div>
 
-        <div class="divcontent divcontent3">
-            <div class="flex">
-                <img [src]="divcontent3.image">
-                <h2>{{divcontent3.title}}</h2>
-            </div>
-            <p>{{divcontent3.description}}</p>
-            <a href="#">{{divcontent3.button}}</a>
-        </div>
-
-        <div class="divcontent divcontent4">
-            <div class="flex">
-                <img [src]="divcontent4.image">
-                <h2>{{divcontent4.title}}</h2>
-            </div>
-            <p>{{divcontent4.description}}</p>
-            <a href="#">{{divcontent4.button}}</a>
-        </div>
-
-        <div class="divcontent divcontent5">
-            <div class="flex">
-                <img [src]="divcontent5.image">
-                <h2>{{divcontent5.title}}</h2>
-            </div>
-            <p>{{divcontent5.description}}</p>
-            <a href="#">{{divcontent5.button}}</a>
-        </div>
-
-        <div class="divcontent divcontent6">
-            <div class="flex">
-                <img [src]="divcontent6.image">
-                <h2>{{divcontent6.title}}</h2>
-            </div>
-            <p>{{divcontent6.description}}</p>
-            <a href="#">{{divcontent6.button}}</a>
-        </div>
-
-        <div class="divcontent divcontent7">
+       <div class="divcontent divcontent7">
             <h2>{{services.title4}}<span style="font-weight: bold;">{{services.title5}}</span></h2>
             <button>{{services.title6}}</button>
         </div>
@@ -164,15 +128,15 @@
 <div class="row">
     <div class="menu">
         <ul>
-            <li class="active"><a href="">{{menu.option1}}</a></li>
-            <li><a href="">{{menu.option2}}</a></li>
+            <li class="active" *ngFor="let menu of menulist"><a href="">{{menu}}</a></li>
+            <!-- <li><a href="">{{menu.option2}}</a></li>
             <li><a href="">{{menu.option3}}</a></li>
             <li><a href="">{{menu.option4}}</a></li>
             <li><a href="">{{menu.option5}}</a></li>
             <li><a href="">{{menu.option6}}</a></li>
             <li><a href="">{{menu.option7}}</a></li>
             <li><a href="">{{menu.option8}}</a></li>
-            <li><a href="">{{menu.option9}}</a></li>
+            <li><a href="">{{menu.option9}}</a></li> -->
         </ul>
     </div>
     <div class="language">
