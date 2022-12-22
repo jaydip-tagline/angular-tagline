@@ -1,0 +1,623 @@
+<div class="topbar">
+
+    <div class="header">
+
+        <nav>
+            <ul>
+                <img [src]="logo">
+                <li><a href="#">{{ casestudyData }}</a></li>
+                <li>
+                    <label>{{ headerData.aboutUs}}</label>
+                    <select>
+
+                    </select>
+                </li>
+                <li>
+                    <label>{{ headerData.hireDev}}</label>
+                    <select>
+
+                    </select>
+                </li>
+                <li>
+                    <label>{{ headerData.industry}}</label>
+                    <select>
+
+                    </select>
+                </li>
+                <li>
+                    <label>{{ headerData.technology}}</label>
+                    <select>
+
+                    </select>
+                </li>
+                <div class='btngetType'>
+                    <button type="button" style="display: flex; justify-content: end;" class="btnGet">GET QUOTE</button>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="headtext">
+        <h1>{{Headtext.title1}} <br> {{Headtext.title2}}</h1>
+        <h1>{{Headtext.title3}} <span>{{Headtext.title4}} </span></h1>
+        <p>{{Headtext.description1}} <br> {{Headtext.description2}}</p>
+        <button type="button">{{Headtext.button}}</button>
+        <img [src]="Headtext.image">
+    </div>
+</div>
+
+<!-- ___________________________________________________________ -->
+
+
+<div class="services">
+    <h1>{{services.header}}</h1>
+    <span class="headerline"></span>
+
+    <div class="boxes">
+        <div class="divcontent divcontent1" style="border: none;">
+            <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{services.title1}}<br> <span
+                    style="font-weight: bolder; font-size: 60px;">{{services.title2}}</span> <br> {{services.title3}}</h1>
+        </div>
+
+        <div class="divcontent divcontent2">
+            <div class="flex">
+                <img [src]="divcontent2.image">
+                <h2>{{divcontent2.title}}</h2>
+            </div>
+            <p>{{divcontent2.description}}</p>
+            <a href="#">{{divcontent2.button}}</a>
+        </div>
+
+        <div class="divcontent divcontent3">
+            <div class="flex">
+                <img [src]="divcontent3.image">
+                <h2>{{divcontent3.title}}</h2>
+            </div>
+            <p>{{divcontent3.description}}</p>
+            <a href="#">{{divcontent3.button}}</a>
+        </div>
+
+        <div class="divcontent divcontent4">
+            <div class="flex">
+                <img [src]="divcontent4.image">
+                <h2>{{divcontent4.title}}</h2>
+            </div>
+            <p>{{divcontent4.description}}</p>
+            <a href="#">{{divcontent4.button}}</a>
+        </div>
+
+        <div class="divcontent divcontent5">
+            <div class="flex">
+                <img [src]="divcontent5.image">
+                <h2>{{divcontent5.title}}</h2>
+            </div>
+            <p>{{divcontent5.description}}</p>
+            <a href="#">{{divcontent5.button}}</a>
+        </div>
+
+        <div class="divcontent divcontent6">
+            <div class="flex">
+                <img [src]="divcontent6.image">
+                <h2>{{divcontent6.title}}</h2>
+            </div>
+            <p>{{divcontent6.description}}</p>
+            <a href="#">{{divcontent6.button}}</a>
+        </div>
+
+        <div class="divcontent divcontent7">
+            <h2>{{services.title4}}<span style="font-weight: bold;">{{services.title5}}</span></h2>
+            <button>{{services.title6}}</button>
+        </div>
+    </div>
+</div>
+
+<!-- ___________________________________________________________ -->
+<div class="experience">
+
+    <div class="contentexp">
+        <h2>{{contentexp.title}}</h2>
+        <p>{{contentexp.description}}</p>
+        <button>{{contentexp.button}}</button>
+    </div>
+
+    <span>
+        <img [src]="imageWoman" height="490">
+    </span>
+
+
+
+    <div class="numberexp">
+
+        <div class="fulldiv1">
+            <div class="div1">
+                <img [src]="fulldiv1.iamge">
+                <h1>{{fulldiv1.title}}</h1>
+                <h5>{{fulldiv1.description}}</h5>
+            </div>
+            <div class="div2">
+                <img [src]="fulldiv2.iamge">
+                <h1>{{fulldiv2.title}}</h1>
+                <h5>{{fulldiv2.description}}</h5>
+            </div>
+        </div>
+
+        <div class="fulldiv2">
+            <div class="div3">
+                <img [src]="fulldiv3.iamge">
+                <h1>{{fulldiv3.title}}</h1>
+                <h5>{{fulldiv3.description}}</h5>
+            </div>
+            <div class="div4">
+                <img [src]="fulldiv4.iamge">
+                <h1>{{fulldiv4.title}}</h1>
+                <h5>{{fulldiv4.description}}</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ____________________________________________________________________ -->
+
+<h1 style="text-align: center;margin: 40px;font-size: 2rem; margin-bottom: 0;">{{technologies.header}}</h1>
+<span class="headerline"></span>
+<div class="row">
+    <div class="menu">
+        <ul>
+            <li class="active"><a href="">{{menu.option1}}</a></li>
+            <li><a href="">{{menu.option2}}</a></li>
+            <li><a href="">{{menu.option3}}</a></li>
+            <li><a href="">{{menu.option4}}</a></li>
+            <li><a href="">{{menu.option5}}</a></li>
+            <li><a href="">{{menu.option6}}</a></li>
+            <li><a href="">{{menu.option7}}</a></li>
+            <li><a href="">{{menu.option8}}</a></li>
+            <li><a href="">{{menu.option9}}</a></li>
+        </ul>
+    </div>
+    <div class="language">
+        <div class="web">
+            <h1>{{technologies.title}}</h1>
+            <h2 style="margin-top: 20px;font-weight: 400;">{{technologies.type1}}</h2>
+            <div class="backend">
+
+                <div class="ror">
+                    <img [src]="ror.image">
+                    <h3>{{ror.title}}</h3>
+                </div>
+                <div class="python">
+                    <img [src]="python.image">
+                    <h3>{{python.title}}</h3>
+                </div>
+                <div class="node">
+                    <img [src]="node.image">
+                    <h3>{{node.title}}</h3>
+                </div>
+                <div class="php">
+                    <img [src]="php.image">
+                    <h3>{{php.title}}</h3>
+                </div>
+                <div class="java">
+                    <img [src]="java.image">
+                    <h3>{{java.title}}</h3>
+                </div>
+                <div class="go">
+                    <img [src]="go.image">
+                    <h3>{{go.title}}</h3>
+                </div>
+
+            </div>
+
+            <h2>{{technologies.type2}}</h2>
+            <div class="frontend">
+                <div class="react">
+                    <img [src]="react.image">
+                    <h3>{{react.title}}</h3>
+                </div>
+                <div class="angular">
+                    <img [src]="angular.image">
+                    <h3>{{angular.title}}</h3>
+                </div>
+                <div class="typescipt">
+                    <img [src]="typescript.image">
+                    <h3>{{typescript.title}}</h3>
+                </div>
+                <div class="vue">
+                    <img [src]="vue.image">
+                    <h3>{{vue.title}}</h3>
+                </div>
+                <div class="mateor">
+                    <img [src]="mateor.image">
+                    <h3>{{mateor.title}}</h3>
+                </div>
+                <div class="javascript">
+                    <img [src]="javascript.image">
+                    <h3>{{javascript.title}}</h3>
+                </div>
+                <div class="html">
+                    <img [src]="html.image">
+                    <h3>{{html.title}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ____________________________________________________________________ -->
+
+
+<h1 class="taglinewhyhead">{{taglinewhyhead.header}}</h1>
+<span class="headerline"></span>
+<p class="taglinewhyp">{{taglinewhypval}}</p>
+<div class="empowers">
+    <div class="empowerbox">
+        <div class="imgnumflex">
+            <img [src]="imgnumflex.image">
+            <h1>{{imgnumflex.title1}}</h1>
+        </div>
+        <h2>{{imgnumflex.title2}}</h2>
+        <p>{{imgnumflex.description}}</p>
+    </div>
+    <div class="empowerbox">
+        <div class="imgnumflex">
+            <img [src]="imgnumflex1.image">
+            <h1>{{imgnumflex1.title1}}</h1>
+        </div>
+        <h2>{{imgnumflex1.title2}}</h2>
+        <p>{{imgnumflex1.description}}</p>
+    </div>
+    <div class="empowerbox">
+        <div class="imgnumflex">
+            <img [src]="imgnumflex2.image">
+            <h1>{{imgnumflex2.title1}}</h1>
+        </div>
+        <h2>{{imgnumflex2.title2}}</h2>
+        <p>{{imgnumflex2.description}}</p>
+    </div>
+    <div class="empowerbox">
+        <div class="imgnumflex">
+            <img [src]="imgnumflex3.image">
+            <h1>{{imgnumflex3.title1}}</h1>
+        </div>
+        <h2>{{imgnumflex3.title2}}</h2>
+        <p>{{imgnumflex3.description}}</p>
+    </div>
+    <div class="empowerbox">
+        <div class="imgnumflex">
+            <img [src]="imgnumflex4.image">
+            <h1>{{imgnumflex4.title1}}</h1>
+        </div>
+        <h2>{{imgnumflex4.title2}}</h2>
+        <p>{{imgnumflex4.description}}</p>
+    </div>
+    
+    <div class="empowerbox lastempowerbox">
+        <h1><span>{{taglinewhyhead.title1}}</span>{{taglinewhyhead.title2}}<span>{{taglinewhyhead.title3}}</span>{{taglinewhyhead.title4}}</h1>
+        <button>{{taglinewhyhead.title5}}</button>
+    </div>
+</div>
+
+<!-- ____________________________________________________________________ -->
+
+<div class="reviews">
+    <div class="reviewword">
+        <h1>{{reviews}}</h1>
+        <span class="headerline"></span>
+        <p>{{headerlineval}}</p>
+        <p>{{headerlineval1}}</p>
+    </div>
+    <div class="reviewsboxes">
+        <div class="revbox">
+            <div class="rating">
+                <h3>{{revbox.number}}</h3>
+                <div class="icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+
+            <p>{{revbox.review}}</p>
+            <small>{{revbox.name}}</small>
+
+            <div class="verified">
+                <i class="bi bi-patch-check-fill"></i>&nbsp;
+                <p>{{revbox.verify}}</p>
+            </div>
+        </div>
+
+        <div class="revbox">
+            <div class="rating">
+                <h3>{{revbox1.number}}</h3>
+                <div class="icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+
+            <p>{{revbox1.review}}</p>
+            <small>{{revbox1.name}}</small>
+
+            <div class="verified">
+                <i class="bi bi-patch-check-fill"></i>
+                <p>{{revbox1.verify}}</p>
+            </div>
+        </div>
+
+        <div class="revbox">
+            <div class="rating">
+                <h3>{{revbox2.number}}</h3>
+                <div class="icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+
+            <p>{{revbox2.review}}</p>
+            <small>{{revbox2.name}}</small>
+
+            <div class="verified">
+                <i class="bi bi-patch-check-fill"></i>
+                <p>{{revbox2.verify}}</p>
+            </div>
+        </div>
+
+        <div class="revbox">
+            <div class="rating">
+                <h3>{{revbox3.number}}</h3>
+                <div class="icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+
+            <p>{{revbox3.review}}</p>
+            <small>{{revbox3.name}}</small>
+
+            <div class="verified">
+                <i class="bi bi-patch-check-fill"></i>
+                <p>{{revbox3.verify}}</p>
+            </div>
+        </div>
+
+        <div class="revbox">
+            <div class="rating">
+                <h3>{{revbox4.number}}</h3>
+                <div class="icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+
+            <p>{{revbox4.review}}</p>
+            <small>{{revbox4.name}}</small>
+
+            <div class="verified">
+                <i class="bi bi-patch-check-fill"></i>
+                <p>{{revbox4.verify}}</p>
+            </div>
+        </div>
+
+        <div class="revbox">
+            <div class="rating">
+                <h3>{{revbox5.number}}</h3>
+                <div class="icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+
+            <p>{{revbox5.review}}</p>
+            <small>{{revbox5.name}}</small>
+
+            <div class="verified">
+                <i class="bi bi-patch-check-fill"></i>
+                <p>{{revbox5.verify}}</p>
+            </div>
+        </div>
+
+        
+    </div>
+
+</div>
+
+<!-- ____________________________________________________________________ -->
+
+
+<div class="awards">
+    <!-- <div class="awardhead"> -->
+    <h1>{{awards.header1}}<br>{{awards.header2}}</h1>
+    <!-- </div> -->
+    <div class="awardimage">
+        <img [src]="awardimage.image1" height="160" width="160">
+        <img [src]="awardimage.image2" height="160" width="160">
+        <img [src]="awardimage.image3" height="160" width="160">
+        <img [src]="awardimage.image4" height="160" width="160">
+        <img [src]="awardimage.image5" height="160" width="160">
+    </div>
+
+</div>
+
+<!-- ____________________________________________________________________ -->
+
+<div class="blogs">
+    <h1>{{blog1.btitle}}</h1>
+    <span class="headerline"></span>
+    <div class="bloggers">
+        <div class="blog">
+            <img [src]="blog.image">
+            <div [style]="blog.styleData">
+                <button>{{blog.button1}}</button>
+                <p>{{blog.date}}</p>
+            </div>
+            <h3>{{blog.title}}f</h3>
+            <p>{{blog.descrption}}</p>
+            <a href="#">{{blog.button2}}</a>
+        </div>
+        <div class="blog">
+            <img [src]="blog1.image">
+            <div [style]="blog1.styleData">
+                <button>{{blog1.button1}}</button>
+                <p>{{blog1.date}}</p>
+            </div>
+            <h3>{{blog1.title}}f</h3>
+            <p>{{blog1.descrption}}</p>
+            <a href="#">{{blog1.button2}}</a>
+        </div>
+        <div class="blog">
+            <img [src]="blog2.image">
+            <div [style]="blog2.styleData">
+                <button>{{blog2.button1}}</button>
+                <p>{{blog2.date}}</p>
+            </div>
+            <h3>{{blog2.title}}f</h3>
+            <p>{{blog2.descrption}}</p>
+            <a href="#">{{blog2.button2}}</a>
+        </div>
+    </div>
+</div>
+
+<!-- ____________________________________________________________________ -->
+
+<div class="contactus">
+    <div class="formdetail">
+        <div class="address">
+
+            <h4>{{contactus.header1}}</h4>
+
+            <div class="place">
+                <h6>{{place.country}}</h6>
+                <p class="add-city">{{place.address}}</p>
+                <a href="tel:+91 99138 08285" class="contact mobile-no"><i
+                        class="bi bi-telephone-fill"></i>&nbsp;&nbsp; {{place.number}}</a>
+            </div>
+
+            <div class="place">
+                <h6>{{place1.country}}</h6>
+                <p class="add-city">{{place1.address}}</p>
+                <a href="tel:+91 99138 08285" class="contact mobile-no"><i
+                        class="bi bi-telephone-fill"></i>&nbsp;&nbsp; {{place1.number}}</a>
+            </div>
+
+            <div class="place">
+                <h6>{{place2.country}}</h6>
+                <p class="add-city">{{place2.address}}</p>
+                <a href="tel:+91 99138 08285" class="contact mobile-no"><i
+                        class="bi bi-telephone-fill"></i>&nbsp;&nbsp; {{place2.number}}</a>
+            </div>
+
+            <div class="place">
+                <a href="mailto:solutions@taglineinfotech.com" class="mail"><i
+                        class="bi bi-envelope-fill"></i>{{place2.email}}</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="forms">
+        <h1>{{contactus.header2}}</h1>
+        <input type="text" placeholder="Full Name"><br>
+        <input type="text" placeholder="Phone"><br>
+        <input type="email" placeholder="Email"><br>
+        <textarea placeholder="Message" rows="3"></textarea><br>
+        <button>Send Message</button>
+    </div>
+</div>
+
+<!-- ____________________________________________________________________ -->
+
+<div class="footer">
+    <div class="firstfooter">
+        <div class="cont1">
+            <h3>{{firstfooter.header}}</h3>
+            <p>{{firstfooter.title1}}<span style="color:#d66f37">{{firstfooter.title2}}</span>{{firstfooter.title3}}<span
+                    style="color:#d66f37">{{firstfooter.title4}}</span></p>
+        </div>
+        <div class="cont2">
+            <input type="text" placeholder="Email"><span><button>Subscribe</button></span>
+            <p>{{firstfooter.title5}}</p>
+        </div>
+    </div>
+    <div class="division">
+        <div>
+            <div class="hr">
+                <h3>{{division.title}}</h3>
+                <ul>
+                    <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp; {{division.website}}</a></li>
+                    <li><a href=""><i class="bi bi-envelope-fill"></i>&nbsp; {{division.number}}</a></li>
+                </ul>
+            </div>
+            <div class="sales">
+                <h3>{{division1.title}}</h3>
+                <ul>
+                    <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp; {{division1.website}}</a></li>
+                    <li><a href=""><i class="bi bi-envelope-fill"></i>&nbsp; {{division1.number}}</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="help">
+            <h3>{{division2.title}}</h3>
+            <ul>
+                <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp;{{division2.option1}}</a></li>
+                <li><a href=""><i class="bi bi-file-person-fill"></i>&nbsp;{{division2.option2}}</a></li>
+                <li><a href=""><i class="bi bi-envelope-fill"></i>&nbsp;{{division2.option3}}</a></li>
+                <li><a href=""><i class="bi bi-camera-video"></i>&nbsp;{{division2.option4}}</a></li>
+                <li><a href=""><i class="bi bi-file-earmark-lock2-fill"></i>&nbsp;{{division2.option5}}</a></li>
+                <li><a href=""><i class="bi bi-diagram-3-fill"></i>&nbsp;{{division2.option6}}</a></li>
+            </ul>
+        </div>
+        <div class="service">
+            <h3>{{division3.title}}</h3>
+            <ul>
+                <li><a href="">{{division3.option1}}</a></li>
+                <li><a href="">{{division3.option2}}</a></li>
+                <li><a href="">{{division3.option3}}</a></li>
+                <li><a href="">{{division3.option4}}</a></li>
+                <li><a href="">{{division3.option5}}</a></li>
+            </ul>
+        </div>
+        <div class="hire">
+            <h3>{{division4.title}}</h3>
+            <ul>
+                <li><a href="">{{division4.option1}}</a></li>
+                <li><a href="">{{division4.option2}}</a></li>
+                <li><a href="">{{division4.option3}}</a></li>
+                <li><a href="">{{division4.option4}}</a></li>
+                <li><a href="">{{division4.option5}}</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="lastfooterdiv">
+        <img src="../assets/image/tagline-stamp.png">
+        <div><a href="" style="text-decoration: none;color: gray;font-size: 17px;">Follow Us <i
+                    class="bi bi-facebook"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-globe"></i>
+
+            </a></div>
+        <p>© <span style="color:#d66f37">{{firstfooter.title6}}</span>{{firstfooter.title7}}<a href=""
+                style="text-decoration: none;color:#d66f37">{{firstfooter.title8}}</a></p>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
