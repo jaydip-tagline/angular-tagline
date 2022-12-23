@@ -129,14 +129,6 @@
     <div class="menu">
         <ul>
             <li class="active" *ngFor="let menu of menulist"><a href="">{{menu}}</a></li>
-            <!-- <li><a href="">{{menu.option2}}</a></li>
-            <li><a href="">{{menu.option3}}</a></li>
-            <li><a href="">{{menu.option4}}</a></li>
-            <li><a href="">{{menu.option5}}</a></li>
-            <li><a href="">{{menu.option6}}</a></li>
-            <li><a href="">{{menu.option7}}</a></li>
-            <li><a href="">{{menu.option8}}</a></li>
-            <li><a href="">{{menu.option9}}</a></li> -->
         </ul>
     </div>
     <div class="language">
@@ -214,7 +206,7 @@
 <span class="headerline"></span>
 <p class="taglinewhyp">{{taglinewhypval}}</p>
 <div class="empowers">
-    <div class="empowerbox">
+    <div class="empowerbox" *ngFor="let imgnumflex of imgnumflexlist">
         <div class="imgnumflex">
             <img [src]="imgnumflex.image">
             <h1>{{imgnumflex.title1}}</h1>
@@ -222,39 +214,7 @@
         <h2>{{imgnumflex.title2}}</h2>
         <p>{{imgnumflex.description}}</p>
     </div>
-    <div class="empowerbox">
-        <div class="imgnumflex">
-            <img [src]="imgnumflex1.image">
-            <h1>{{imgnumflex1.title1}}</h1>
-        </div>
-        <h2>{{imgnumflex1.title2}}</h2>
-        <p>{{imgnumflex1.description}}</p>
-    </div>
-    <div class="empowerbox">
-        <div class="imgnumflex">
-            <img [src]="imgnumflex2.image">
-            <h1>{{imgnumflex2.title1}}</h1>
-        </div>
-        <h2>{{imgnumflex2.title2}}</h2>
-        <p>{{imgnumflex2.description}}</p>
-    </div>
-    <div class="empowerbox">
-        <div class="imgnumflex">
-            <img [src]="imgnumflex3.image">
-            <h1>{{imgnumflex3.title1}}</h1>
-        </div>
-        <h2>{{imgnumflex3.title2}}</h2>
-        <p>{{imgnumflex3.description}}</p>
-    </div>
-    <div class="empowerbox">
-        <div class="imgnumflex">
-            <img [src]="imgnumflex4.image">
-            <h1>{{imgnumflex4.title1}}</h1>
-        </div>
-        <h2>{{imgnumflex4.title2}}</h2>
-        <p>{{imgnumflex4.description}}</p>
-    </div>
-    
+
     <div class="empowerbox lastempowerbox">
         <h1><span>{{taglinewhyhead.title1}}</span>{{taglinewhyhead.title2}}<span>{{taglinewhyhead.title3}}</span>{{taglinewhyhead.title4}}</h1>
         <button>{{taglinewhyhead.title5}}</button>
@@ -271,7 +231,7 @@
         <p>{{headerlineval1}}</p>
     </div>
     <div class="reviewsboxes">
-        <div class="revbox">
+        <div class="revbox" *ngFor="let revbox of revboxlist">
             <div class="rating">
                 <h3>{{revbox.number}}</h3>
                 <div class="icon">
@@ -291,113 +251,6 @@
                 <p>{{revbox.verify}}</p>
             </div>
         </div>
-
-        <div class="revbox">
-            <div class="rating">
-                <h3>{{revbox1.number}}</h3>
-                <div class="icon">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                </div>
-            </div>
-
-            <p>{{revbox1.review}}</p>
-            <small>{{revbox1.name}}</small>
-
-            <div class="verified">
-                <i class="bi bi-patch-check-fill"></i>
-                <p>{{revbox1.verify}}</p>
-            </div>
-        </div>
-
-        <div class="revbox">
-            <div class="rating">
-                <h3>{{revbox2.number}}</h3>
-                <div class="icon">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                </div>
-            </div>
-
-            <p>{{revbox2.review}}</p>
-            <small>{{revbox2.name}}</small>
-
-            <div class="verified">
-                <i class="bi bi-patch-check-fill"></i>
-                <p>{{revbox2.verify}}</p>
-            </div>
-        </div>
-
-        <div class="revbox">
-            <div class="rating">
-                <h3>{{revbox3.number}}</h3>
-                <div class="icon">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                </div>
-            </div>
-
-            <p>{{revbox3.review}}</p>
-            <small>{{revbox3.name}}</small>
-
-            <div class="verified">
-                <i class="bi bi-patch-check-fill"></i>
-                <p>{{revbox3.verify}}</p>
-            </div>
-        </div>
-
-        <div class="revbox">
-            <div class="rating">
-                <h3>{{revbox4.number}}</h3>
-                <div class="icon">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                </div>
-            </div>
-
-            <p>{{revbox4.review}}</p>
-            <small>{{revbox4.name}}</small>
-
-            <div class="verified">
-                <i class="bi bi-patch-check-fill"></i>
-                <p>{{revbox4.verify}}</p>
-            </div>
-        </div>
-
-        <div class="revbox">
-            <div class="rating">
-                <h3>{{revbox5.number}}</h3>
-                <div class="icon">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                </div>
-            </div>
-
-            <p>{{revbox5.review}}</p>
-            <small>{{revbox5.name}}</small>
-
-            <div class="verified">
-                <i class="bi bi-patch-check-fill"></i>
-                <p>{{revbox5.verify}}</p>
-            </div>
-        </div>
-
-        
     </div>
 
 </div>
@@ -422,10 +275,10 @@
 <!-- ____________________________________________________________________ -->
 
 <div class="blogs">
-    <h1>{{blog1.btitle}}</h1>
+    <h1>Our Blogs</h1>
     <span class="headerline"></span>
     <div class="bloggers">
-        <div class="blog">
+        <div class="blog" *ngFor="let blog of bloglist">
             <img [src]="blog.image">
             <div [style]="blog.styleData">
                 <button>{{blog.button1}}</button>
@@ -434,26 +287,6 @@
             <h3>{{blog.title}}f</h3>
             <p>{{blog.descrption}}</p>
             <a href="#">{{blog.button2}}</a>
-        </div>
-        <div class="blog">
-            <img [src]="blog1.image">
-            <div [style]="blog1.styleData">
-                <button>{{blog1.button1}}</button>
-                <p>{{blog1.date}}</p>
-            </div>
-            <h3>{{blog1.title}}f</h3>
-            <p>{{blog1.descrption}}</p>
-            <a href="#">{{blog1.button2}}</a>
-        </div>
-        <div class="blog">
-            <img [src]="blog2.image">
-            <div [style]="blog2.styleData">
-                <button>{{blog2.button1}}</button>
-                <p>{{blog2.date}}</p>
-            </div>
-            <h3>{{blog2.title}}f</h3>
-            <p>{{blog2.descrption}}</p>
-            <a href="#">{{blog2.button2}}</a>
         </div>
     </div>
 </div>
@@ -466,30 +299,15 @@
 
             <h4>{{contactus.header1}}</h4>
 
-            <div class="place">
+            <div class="place" *ngFor="let place of placelist">
                 <h6>{{place.country}}</h6>
                 <p class="add-city">{{place.address}}</p>
                 <a href="tel:+91 99138 08285" class="contact mobile-no"><i
                         class="bi bi-telephone-fill"></i>&nbsp;&nbsp; {{place.number}}</a>
             </div>
-
-            <div class="place">
-                <h6>{{place1.country}}</h6>
-                <p class="add-city">{{place1.address}}</p>
-                <a href="tel:+91 99138 08285" class="contact mobile-no"><i
-                        class="bi bi-telephone-fill"></i>&nbsp;&nbsp; {{place1.number}}</a>
-            </div>
-
-            <div class="place">
-                <h6>{{place2.country}}</h6>
-                <p class="add-city">{{place2.address}}</p>
-                <a href="tel:+91 99138 08285" class="contact mobile-no"><i
-                        class="bi bi-telephone-fill"></i>&nbsp;&nbsp; {{place2.number}}</a>
-            </div>
-
             <div class="place">
                 <a href="mailto:solutions@taglineinfotech.com" class="mail"><i
-                        class="bi bi-envelope-fill"></i>{{place2.email}}</a>
+                        class="bi bi-envelope-fill"></i>{{place1}}</a>
             </div>
 
         </div>
@@ -536,34 +354,21 @@
             </div>
         </div>
         <div class="help">
-            <h3>{{division2.title}}</h3>
+            <h3>{{div2title}}</h3>
             <ul>
-                <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp;{{division2.option1}}</a></li>
-                <li><a href=""><i class="bi bi-file-person-fill"></i>&nbsp;{{division2.option2}}</a></li>
-                <li><a href=""><i class="bi bi-envelope-fill"></i>&nbsp;{{division2.option3}}</a></li>
-                <li><a href=""><i class="bi bi-camera-video"></i>&nbsp;{{division2.option4}}</a></li>
-                <li><a href=""><i class="bi bi-file-earmark-lock2-fill"></i>&nbsp;{{division2.option5}}</a></li>
-                <li><a href=""><i class="bi bi-diagram-3-fill"></i>&nbsp;{{division2.option6}}</a></li>
+                <li *ngFor="let divabs of division2list"><a href=""><i class="bi bi-telephone-fill" ></i>&nbsp;{{divabs}}</a></li>
             </ul>
         </div>
         <div class="service">
-            <h3>{{division3.title}}</h3>
+            <h3>{{div3title}}</h3>
             <ul>
-                <li><a href="">{{division3.option1}}</a></li>
-                <li><a href="">{{division3.option2}}</a></li>
-                <li><a href="">{{division3.option3}}</a></li>
-                <li><a href="">{{division3.option4}}</a></li>
-                <li><a href="">{{division3.option5}}</a></li>
+                <li *ngFor="let division3 of division3list"><a href="">{{division3}}</a></li>
             </ul>
         </div>
         <div class="hire">
-            <h3>{{division4.title}}</h3>
+            <h3>{{div4title}}</h3>
             <ul>
-                <li><a href="">{{division4.option1}}</a></li>
-                <li><a href="">{{division4.option2}}</a></li>
-                <li><a href="">{{division4.option3}}</a></li>
-                <li><a href="">{{division4.option4}}</a></li>
-                <li><a href="">{{division4.option5}}</a></li>
+                <li *ngFor="let division4 of division4list"><a href="">{{division4}}</a></li>
             </ul>
         </div>
 
