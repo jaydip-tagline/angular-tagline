@@ -145,26 +145,7 @@
         <p>{{headerlineval1}}</p>
     </div>
     <div class="reviewsboxes">
-        <div class="revbox" *ngFor="let revbox of revboxlist">
-            <div class="rating">
-                <h3>{{revbox.number}}</h3>
-                <div class="icon">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                </div>
-            </div>
-
-            <p>{{revbox.review}}</p>
-            <small>{{revbox.name}}</small>
-
-            <div class="verified">
-                <i class="bi bi-patch-check-fill"></i>&nbsp;
-                <p>{{revbox.verify}}</p>
-            </div>
-        </div>
+        <app-rating-card [revBox]="revboxlist"></app-rating-card>
     </div>
 
 </div>

@@ -1,1 +1,22 @@
-<p>rating-card works!</p>
+<div class="reviewsboxes">
+    <div class="revbox" *ngFor="let revBoxData of revBox">
+        <div class="rating">
+            <h3>{{revBoxData.number}}</h3>
+            <div class="icon">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+        </div>
+
+        <p>{{revBoxData.review}}</p>
+        <small>{{revBoxData.name}}</small>
+
+        <div class="verified">
+            <i class="bi bi-patch-check-fill"></i>&nbsp;
+            <p>{{revBoxData.verify}}</p>
+        </div>
+    </div>
+</div>
