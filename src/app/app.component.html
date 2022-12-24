@@ -119,14 +119,15 @@
 <span class="headerline"></span>
 <p class="taglinewhyp">{{taglinewhypval}}</p>
 <div class="empowers">
-    <div class="empowerbox" *ngFor="let imgnumflex of imgnumflexlist">
+    <app-expertise-card [imgnumflex]="imgnumflexlist"></app-expertise-card>
+    <!-- <div class="empowerbox" *ngFor="let imgnumflex of imgnumflexlist">
         <div class="imgnumflex">
             <img [src]="imgnumflex.image">
             <h1>{{imgnumflex.title1}}</h1>
         </div>
         <h2>{{imgnumflex.title2}}</h2>
         <p>{{imgnumflex.description}}</p>
-    </div>
+    </div> -->
 
     <div class="empowerbox lastempowerbox">
         <h1><span>{{taglinewhyhead.title1}}</span>{{taglinewhyhead.title2}}<span>{{taglinewhyhead.title3}}</span>{{taglinewhyhead.title4}}</h1>

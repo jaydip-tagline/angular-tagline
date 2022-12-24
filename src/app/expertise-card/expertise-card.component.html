@@ -1,0 +1,10 @@
+<div class="empowers">
+    <div class="empowerbox" *ngFor="let imgnumData of imgnumflex">
+        <div class="imgnumflex">
+            <img [src]="imgnumData.image">
+            <h1>{{imgnumData.title1}}</h1>
+        </div>
+        <h2>{{imgnumData.title2}}</h2>
+        <p>{{imgnumData.description}}</p>
+    </div>
+</div>

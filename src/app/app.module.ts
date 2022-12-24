@@ -11,6 +11,8 @@ import { ExperienceDataleftComponent } from './experience-dataleft/experience-da
 import { TechnologiesNameComponent } from './technologies-name/technologies-name.component';
 import { TechnologyFrontendComponent } from './technology-frontend/technology-frontend.component';
 import { TechnologySidebarComponent } from './technology-sidebar/technology-sidebar.component';
+import { ExpertiseCardComponent } from './expertise-card/expertise-card.component';
+import { RatingCardComponent } from './rating-card/rating-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { TechnologySidebarComponent } from './technology-sidebar/technology-side
     ExperienceDataleftComponent,
     TechnologiesNameComponent,
     TechnologyFrontendComponent,
-    TechnologySidebarComponent
+    TechnologySidebarComponent,
+    ExpertiseCardComponent,
+    RatingCardComponent
   ],
   imports: [
     BrowserModule,
