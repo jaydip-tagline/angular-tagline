@@ -14,6 +14,7 @@ import { TechnologySidebarComponent } from './technology-sidebar/technology-side
 import { ExpertiseCardComponent } from './expertise-card/expertise-card.component';
 import { RatingCardComponent } from './rating-card/rating-card.component';
 import { OurblogCardComponent } from './ourblog-card/ourblog-card.component';
+import { AddressCardComponent } from './address-card/address-card.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { OurblogCardComponent } from './ourblog-card/ourblog-card.component';
     TechnologySidebarComponent,
     ExpertiseCardComponent,
     RatingCardComponent,
-    OurblogCardComponent
+    OurblogCardComponent,
+    AddressCardComponent
   ],
   imports: [
     BrowserModule,

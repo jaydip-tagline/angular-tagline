@@ -184,13 +184,7 @@
         <div class="address">
 
             <h4>{{contactus.header1}}</h4>
-
-            <div class="place" *ngFor="let place of placelist">
-                <h6>{{place.country}}</h6>
-                <p class="add-city">{{place.address}}</p>
-                <a href="tel:+91 99138 08285" class="contact mobile-no"><i
-                        class="bi bi-telephone-fill"></i>&nbsp;&nbsp; {{place.number}}</a>
-            </div>
+            <app-address-card [placeData]="placelist"></app-address-card>
             <div class="place">
                 <a href="mailto:solutions@taglineinfotech.com" class="mail"><i
                         class="bi bi-envelope-fill"></i>{{place1}}</a>
