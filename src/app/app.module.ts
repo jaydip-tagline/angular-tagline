@@ -13,6 +13,7 @@ import { TechnologyFrontendComponent } from './technology-frontend/technology-fr
 import { TechnologySidebarComponent } from './technology-sidebar/technology-sidebar.component';
 import { ExpertiseCardComponent } from './expertise-card/expertise-card.component';
 import { RatingCardComponent } from './rating-card/rating-card.component';
+import { OurblogCardComponent } from './ourblog-card/ourblog-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RatingCardComponent } from './rating-card/rating-card.component';
     TechnologyFrontendComponent,
     TechnologySidebarComponent,
     ExpertiseCardComponent,
-    RatingCardComponent
+    RatingCardComponent,
+    OurblogCardComponent
   ],
   imports: [
     BrowserModule,

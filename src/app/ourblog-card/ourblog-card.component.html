@@ -1,0 +1,15 @@
+<div class="blogs">
+    <!-- <span class="headerline"></span> -->
+    <div class="bloggers">
+        <div class="blog" *ngFor="let blog of blogData">
+            <img [src]="blog.image">
+            <div [style]="blog.styleData">
+                <button>{{blog.button1}}</button>
+                <p>{{blog.date}}</p>
+            </div>
+            <h3>{{blog.title}}f</h3>
+            <p>{{blog.descrption}}</p>
+            <a href="#">{{blog.button2}}</a>
+        </div>
+    </div>
+</div>
