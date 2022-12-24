@@ -1,0 +1,25 @@
+<p>disclaimer works!</p>
+
+<div class="boxes1">
+    <!-- <div class="divcontent divcontent1" style="border: none;">
+        <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{services.title1}}<br> <span
+                style="font-weight: bolder; font-size: 60px;">{{services.title2}}</span> <br> {{services.title3}}</h1>
+    </div> -->
+
+<div class="divcontent divcontent2" *ngFor="let service of servicelist">
+    <!-- <app-disclaimer></app-disclaimer> -->
+    <div class="flex">
+        <img [src]="service.image">
+        <h2>{{service.title}}</h2>
+    </div>
+    <p>{{service.description}}</p>
+    <a href="#">{{service.button}}</a>
+</div>
+
+<!-- <div class="divcontent divcontent7">
+    <h2>{{services.title4}}<span style="font-weight: bold;">{{services.title5}}</span></h2>
+    <button>{{services.title6}}</button>
+</div> -->
+</div>
+
+

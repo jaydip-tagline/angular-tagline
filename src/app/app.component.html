@@ -1,41 +1,8 @@
 <div class="topbar">
 
-    <div class="header">
+    
+    <app-head-nav [headDataList]="HeaderData"></app-head-nav>
 
-        <nav>
-            <ul>
-                <img [src]="logo">
-                <li><a href="#">{{ casestudyData }}</a></li>
-                <li>
-                    <label>{{ headerData.aboutUs}}</label>
-                    <select>
-
-                    </select>
-                </li>
-                <li>
-                    <label>{{ headerData.hireDev}}</label>
-                    <select>
-
-                    </select>
-                </li>
-                <li>
-                    <label>{{ headerData.industry}}</label>
-                    <select>
-
-                    </select>
-                </li>
-                <li>
-                    <label>{{ headerData.technology}}</label>
-                    <select>
-
-                    </select>
-                </li>
-                <div class='btngetType'>
-                    <button type="button" style="display: flex; justify-content: end;" class="btnGet">GET QUOTE</button>
-                </div>
-            </ul>
-        </nav>
-    </div>
 
     <div class="headtext">
         <h1>{{Headtext.title1}} <br> {{Headtext.title2}}</h1>
@@ -50,16 +17,19 @@
 
 
 <div class="services">
-    <h1>{{services.header}}</h1>
+    <!-- <h1>{{services.header}}</h1> -->
+    <h1>Our Services</h1>
     <span class="headerline"></span>
-
+    
     <div class="boxes">
         <div class="divcontent divcontent1" style="border: none;">
             <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{services.title1}}<br> <span
                     style="font-weight: bolder; font-size: 60px;">{{services.title2}}</span> <br> {{services.title3}}</h1>
-        </div>
-
+        </div> 
+        
+        <!-- <app-disclaimer></app-disclaimer> -->
         <div class="divcontent divcontent2" *ngFor="let service of servicelist">
+            
             <div class="flex">
                 <img [src]="service.image">
                 <h2>{{service.title}}</h2>
@@ -67,6 +37,9 @@
             <p>{{service.description}}</p>
             <a href="#">{{service.button}}</a>
         </div>
+        
+
+        
 
        <div class="divcontent divcontent7">
             <h2>{{services.title4}}<span style="font-weight: bold;">{{services.title5}}</span></h2>

@@ -141,9 +141,16 @@ interface Firstfooterval {
 export class AppComponent {
   title = 'angular_tagline';
 
-  logo: string = '../assets/image/tagline.png';
+  // logo: string = '../assets/image/tagline.png';
 
-  casestudyData: string = 'Case Study';
+  // casestudyData: string = 'Case Study';
+  HeaderData: string[] = [
+    'Case Study',
+    'About Us',
+    'Hire Developer',
+    'Technology',
+    'Industry',
+  ];
 
   Headtext: Headtextval = {
     title1: 'Software Development Company',
@@ -168,12 +175,12 @@ export class AppComponent {
     title6: 'Contact Us',
   };
 
-  headerData: HeadervalData = {
-    aboutUs: 'About Us',
-    hireDev: 'Hire Developer',
-    technology: 'Technology',
-    industry: 'Industry',
-  };
+  // headerData: HeadervalData = {
+  //   aboutUs: 'About Us',
+  //   hireDev: 'Hire Developer',
+  //   technology: 'Technology',
+  //   industry: 'Industry',
+  // };
 
   contentexp: Contentexpval = {
     title: 'We have the experience',
