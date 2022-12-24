@@ -92,7 +92,8 @@
 <div class="row">
     <div class="menu">
         <ul>
-            <li class="active" *ngFor="let menu of menulist"><a href="">{{menu}}</a></li>
+            <!-- <li class="active" *ngFor="let menu of menulist"><a href="">{{menu}}</a></li> -->
+             <app-technology-sidebar [menuData]="menulist"></app-technology-sidebar> 
         </ul>
     </div>
     <div class="language">
@@ -100,64 +101,12 @@
             <h1>{{technologies.title}}</h1>
             <h2 style="margin-top: 20px;font-weight: 400;">{{technologies.type1}}</h2>
             <div class="backend">
-
-                <div class="ror">
-                    <img [src]="ror.image">
-                    <h3>{{ror.title}}</h3>
-                </div>
-                <div class="python">
-                    <img [src]="python.image">
-                    <h3>{{python.title}}</h3>
-                </div>
-                <div class="node">
-                    <img [src]="node.image">
-                    <h3>{{node.title}}</h3>
-                </div>
-                <div class="php">
-                    <img [src]="php.image">
-                    <h3>{{php.title}}</h3>
-                </div>
-                <div class="java">
-                    <img [src]="java.image">
-                    <h3>{{java.title}}</h3>
-                </div>
-                <div class="go">
-                    <img [src]="go.image">
-                    <h3>{{go.title}}</h3>
-                </div>
-
+                <app-technologies-name [techDataList]="techBackend"></app-technologies-name>
             </div>
 
             <h2>{{technologies.type2}}</h2>
             <div class="frontend">
-                <div class="react">
-                    <img [src]="react.image">
-                    <h3>{{react.title}}</h3>
-                </div>
-                <div class="angular">
-                    <img [src]="angular.image">
-                    <h3>{{angular.title}}</h3>
-                </div>
-                <div class="typescipt">
-                    <img [src]="typescript.image">
-                    <h3>{{typescript.title}}</h3>
-                </div>
-                <div class="vue">
-                    <img [src]="vue.image">
-                    <h3>{{vue.title}}</h3>
-                </div>
-                <div class="mateor">
-                    <img [src]="mateor.image">
-                    <h3>{{mateor.title}}</h3>
-                </div>
-                <div class="javascript">
-                    <img [src]="javascript.image">
-                    <h3>{{javascript.title}}</h3>
-                </div>
-                <div class="html">
-                    <img [src]="html.image">
-                    <h3>{{html.title}}</h3>
-                </div>
+                <app-technology-frontend [frontDataList]="techFrontend"></app-technology-frontend>
             </div>
         </div>
     </div>

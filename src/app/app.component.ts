@@ -278,65 +278,63 @@ export class AppComponent {
     'Clouds',
   ];
 
-  ror: Backendval = {
-    image: '../assets/image/ror.png',
-    title: 'Ruby on Rails',
-  };
+  techBackend: Backendval[] = [
+    {
+      image: '../assets/image/ror.png',
+      title: 'Ruby on Rails',
+    },
+    {
+      image: '../assets/image/python.png',
+      title: 'Python',
+    },
+    {
+      image: '../assets/image/node_js.svg',
+      title: 'Node js',
+    },
+    {
+      image: '../assets/image/php.png',
+      title: 'PHP',
+    },
+    {
+      image: '../assets/image/android-java.png',
+      title: 'Java',
+    },
+    {
+      image: '../assets/image/go.png',
+      title: 'Go Language',
+    },
+  ];
 
-  python: Backendval = {
-    image: '../assets/image/python.png',
-    title: 'Python',
-  };
-
-  node: Backendval = {
-    image: '../assets/image/node_js.svg',
-    title: 'Node js',
-  };
-
-  php: Backendval = {
-    image: '../assets/image/php.png',
-    title: 'PHP',
-  };
-
-  java: Backendval = {
-    image: '../assets/image/android-java.png',
-    title: 'Java',
-  };
-
-  go: Backendval = {
-    image: '../assets/image/go.png',
-    title: 'Go Language',
-  };
-
-  react: Backendval = {
-    image: '../assets/image/react-js.png',
-    title: 'React Js',
-  };
-
-  angular: Backendval = {
-    image: '../assets/image/angular-icon.png',
-    title: 'Angular',
-  };
-
-  typescript: Backendval = {
-    image: '../assets/image/typescript-icon.png',
-    title: 'Typescript',
-  };
-
-  vue: Backendval = {
-    image: '../assets/image/vue-js.png',
-    title: 'Vue Js',
-  };
-
-  mateor: Backendval = {
-    image: '../assets/image/meter-js.png',
-    title: 'Mateor Js',
-  };
-
-  javascript: Backendval = {
-    image: '../assets/image/javascript-icon.png',
-    title: 'Java Script',
-  };
+  techFrontend: Backendval[] = [
+    {
+      image: '../assets/image/react-js.png',
+      title: 'React Js',
+    },
+    {
+      image: '../assets/image/angular-icon.png',
+      title: 'Angular',
+    },
+    {
+      image: '../assets/image/typescript-icon.png',
+      title: 'Typescript',
+    },
+    {
+      image: '../assets/image/vue-js.png',
+      title: 'Vue Js',
+    },
+    {
+      image: '../assets/image/meter-js.png',
+      title: 'Mateor Js',
+    },
+    {
+      image: '../assets/image/javascript-icon.png',
+      title: 'Java Script',
+    },
+    {
+      image: '../assets/image/html5.png',
+      title: 'HTML 5',
+    },
+  ];
 
   taglinewhyhead: Taglinewhyheadval = {
     header: 'Why Choose Tagline Infotech ?',
@@ -345,11 +343,6 @@ export class AppComponent {
     title3: 'Business',
     title4: ' with Dedicated Developers',
     title5: 'Talk to our Expert',
-  };
-
-  html: Backendval = {
-    image: '../assets/image/html5.png',
-    title: 'HTML 5',
   };
 
   taglinewhypval: string = `We have a team of developers who use their expertise to provide complete web development,

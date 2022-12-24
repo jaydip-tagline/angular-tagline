@@ -8,6 +8,9 @@ import { HeadNavComponent } from './head-nav/head-nav.component';
 import { OurServiceComponent } from './our-service/our-service.component';
 import { ExperienceDataComponent } from './experience-data/experience-data.component';
 import { ExperienceDataleftComponent } from './experience-dataleft/experience-dataleft.component';
+import { TechnologiesNameComponent } from './technologies-name/technologies-name.component';
+import { TechnologyFrontendComponent } from './technology-frontend/technology-frontend.component';
+import { TechnologySidebarComponent } from './technology-sidebar/technology-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { ExperienceDataleftComponent } from './experience-dataleft/experience-da
     HeadNavComponent,
     OurServiceComponent,
     ExperienceDataComponent,
-    ExperienceDataleftComponent
+    ExperienceDataleftComponent,
+    TechnologiesNameComponent,
+    TechnologyFrontendComponent,
+    TechnologySidebarComponent
   ],
   imports: [
     BrowserModule,
