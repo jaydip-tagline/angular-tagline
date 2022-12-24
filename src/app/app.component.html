@@ -22,13 +22,15 @@
     <span class="headerline"></span>
     
     <div class="boxes">
-        <div class="divcontent divcontent1" style="border: none;">
+        <!-- <div class="divcontent divcontent1" style="border: none;">
             <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{services.title1}}<br> <span
                     style="font-weight: bolder; font-size: 60px;">{{services.title2}}</span> <br> {{services.title3}}</h1>
-        </div> 
+        </div>  -->
         
         <!-- <app-disclaimer></app-disclaimer> -->
-        <div class="divcontent divcontent2" *ngFor="let service of servicelist">
+       
+        <app-our-service [serviceData]="servicelist"></app-our-service>
+        <!-- <div class="divcontent divcontent2" *ngFor="let service of servicelist">
             
             <div class="flex">
                 <img [src]="service.image">
@@ -36,15 +38,15 @@
             </div>
             <p>{{service.description}}</p>
             <a href="#">{{service.button}}</a>
-        </div>
+        </div> -->
         
 
         
 
-       <div class="divcontent divcontent7">
+       <!-- <div class="divcontent divcontent7">
             <h2>{{services.title4}}<span style="font-weight: bold;">{{services.title5}}</span></h2>
             <button>{{services.title6}}</button>
-        </div>
+        </div> -->
     </div>
 </div>
 
