@@ -15,6 +15,7 @@ import { ExpertiseCardComponent } from './expertise-card/expertise-card.componen
 import { RatingCardComponent } from './rating-card/rating-card.component';
 import { OurblogCardComponent } from './ourblog-card/ourblog-card.component';
 import { AddressCardComponent } from './address-card/address-card.component';
+import { AwardCardComponent } from './award-card/award-card.component';
 
 @NgModule({
   declarations: [
@@ -29,14 +30,13 @@ import { AddressCardComponent } from './address-card/address-card.component';
     TechnologySidebarComponent,
     ExpertiseCardComponent,
     RatingCardComponent,
+    AddressCardComponent,
     OurblogCardComponent,
-    AddressCardComponent
+
+    AwardCardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

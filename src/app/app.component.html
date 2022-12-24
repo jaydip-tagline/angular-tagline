@@ -158,11 +158,7 @@
     <h1>{{awards.header1}}<br>{{awards.header2}}</h1>
     <!-- </div> -->
     <div class="awardimage">
-        <img [src]="awardimage.image1" height="160" width="160">
-        <img [src]="awardimage.image2" height="160" width="160">
-        <img [src]="awardimage.image3" height="160" width="160">
-        <img [src]="awardimage.image4" height="160" width="160">
-        <img [src]="awardimage.image5" height="160" width="160">
+        <app-award-card [awardData]="awardimage" ></app-award-card>
     </div>
 
 </div>

@@ -460,13 +460,13 @@ export class AppComponent {
     header2: ' Recognitions',
   };
 
-  awardimage: Awardimageval = {
-    image1: '../assets/image/award-2.webp',
-    image2: '../assets/image/award-3.webp',
-    image3: '../assets/image/award-4.webp',
-    image4: '../assets/image/award-5.webp',
-    image5: '../assets/image/award-6.webp',
-  };
+  awardimage: string[] = [
+    '../assets/image/award-2.webp',
+    '../assets/image/award-3.webp',
+    '../assets/image/award-4.webp',
+    '../assets/image/award-5.webp',
+    '../assets/image/award-6.webp',
+  ];
 
   bloglist: Blogval[] = [
     {
