@@ -1,26 +1,6 @@
-<!-- <div class="divcontent divcontent2" *ngFor="let service1 of serviceData">
-            
-    <div class="flex">
-        <img [src]="service1.image">
-        <h2>{{service1.title}}</h2>
-    </div>
-    <p>{{service1.description}}</p>
-    <a href="#">{{service1.button}}</a>
-</div> -->
-
-
-<div class="services">
-    <!-- <h1>{{services.header}}</h1> -->
-    
-    
+<div class="services"> 
     <div class="boxes">
-        <!-- <div class="divcontent divcontent1" style="border: none;">
-            <h1 style="text-align: left; line-height: 70px;font-weight: 700;">Hey<br> <span
-                    style="font-weight: bolder; font-size: 60px;">Welcome</span> <br> Hello</h1>
-        </div>  -->
-        
         <div class="divcontent divcontent2" *ngFor="let service1 of serviceData">
-            
             <div class="flex">
                 <img [src]="service1.image">
                 <h2>{{service1.title}}</h2>
@@ -28,9 +8,5 @@
             <p>{{service1.description}}</p>
             <a href="#">{{service1.button}}</a>
         </div>
-        <!-- <div class="divcontent divcontent7">
-            <h2>{{services.title4}}<span style="font-weight: bold;">{{services.title5}}</span></h2>
-            <button>{{services.title6}}</button>
-        </div> -->
     </div>
 </div>

@@ -150,6 +150,7 @@ nav ul button:hover {
 }
 
 // .boxes {
+//     width: 1440px;
 //     display: flex;
 //     flex-wrap: wrap;
 //     margin: 35px 180px;
@@ -235,8 +236,9 @@ nav ul button:hover {
 /* ________________________________________________________________________ */
 .experience {
     display: flex;
-    width: 100%;
+    width: 100%;    
     min-height: 68vh;
+    
 }
 
 .experience .contentexp {
@@ -306,7 +308,8 @@ nav ul button:hover {
 .experience .numberexp .fulldiv1,
 .fulldiv2 {
     display: flex;
-    margin: 70px 0px 0px 150px;
+    flex-wrap: wrap;
+    // margin: 70px 0px 0px 150px;
 }
 
 .experience .numberexp .fulldiv1 .div1 h1 {

@@ -26,22 +26,8 @@
             <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{services.title1}}<br> <span
                     style="font-weight: bolder; font-size: 60px;">{{services.title2}}</span> <br> {{services.title3}}</h1>
         </div>  -->
-        
-        <!-- <app-disclaimer></app-disclaimer> -->
-       
-        <app-our-service [serviceData]="servicelist"></app-our-service>
-        <!-- <div class="divcontent divcontent2" *ngFor="let service of servicelist">
-            
-            <div class="flex">
-                <img [src]="service.image">
-                <h2>{{service.title}}</h2>
-            </div>
-            <p>{{service.description}}</p>
-            <a href="#">{{service.button}}</a>
-        </div> -->
-        
 
-        
+        <app-our-service [serviceData]="servicelist"></app-our-service>
 
        <!-- <div class="divcontent divcontent7">
             <h2>{{services.title4}}<span style="font-weight: bold;">{{services.title5}}</span></h2>
@@ -53,11 +39,13 @@
 <!-- ___________________________________________________________ -->
 <div class="experience">
 
-    <div class="contentexp">
+    <!-- <div class="contentexp">
         <h2>{{contentexp.title}}</h2>
         <p>{{contentexp.description}}</p>
         <button>{{contentexp.button}}</button>
-    </div>
+    </div> -->
+    
+    <app-experience-dataleft [exprLeft]="contentexp"></app-experience-dataleft>
 
     <span>
         <img [src]="imageWoman" height="490">
@@ -68,12 +56,13 @@
     <div class="numberexp">
 
         <div class="fulldiv1">
-            <div class="div1">
+            <app-experience-data [experience]="fulldiv1list"></app-experience-data>
+            <!-- <div class="div1" *ngFor="let fulldiv1 of fulldiv1list">
                 <img [src]="fulldiv1.iamge">
                 <h1>{{fulldiv1.title}}</h1>
                 <h5>{{fulldiv1.description}}</h5>
-            </div>
-            <div class="div2">
+            </div> -->
+            <!-- <div class="div2">
                 <img [src]="fulldiv2.iamge">
                 <h1>{{fulldiv2.title}}</h1>
                 <h5>{{fulldiv2.description}}</h5>
@@ -90,7 +79,7 @@
                 <img [src]="fulldiv4.iamge">
                 <h1>{{fulldiv4.title}}</h1>
                 <h5>{{fulldiv4.description}}</h5>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

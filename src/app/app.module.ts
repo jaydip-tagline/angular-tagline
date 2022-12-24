@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { HeadNavComponent } from './head-nav/head-nav.component';
 import { OurServiceComponent } from './our-service/our-service.component';
+import { ExperienceDataComponent } from './experience-data/experience-data.component';
+import { ExperienceDataleftComponent } from './experience-dataleft/experience-dataleft.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DisclaimerComponent,
     HeadNavComponent,
-    OurServiceComponent
+    OurServiceComponent,
+    ExperienceDataComponent,
+    ExperienceDataleftComponent
   ],
   imports: [
     BrowserModule,
