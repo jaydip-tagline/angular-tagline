@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 interface Revboxval {
-  number: string;
+  number: number;
   review: string;
   name: string;
   verify: string;
@@ -13,8 +13,10 @@ interface Revboxval {
   styleUrls: ['./rating-card.component.scss'],
 })
 export class RatingCardComponent implements OnInit {
-  starRating: number = 0;
   @Input() revBox!: Revboxval[];
+  starRating: number = 0;
+
+  // currentRate:number = this.revBox.number;
   constructor() {}
 
   // num = Array(this.revBox.number)
@@ -22,6 +24,6 @@ export class RatingCardComponent implements OnInit {
   // abd = this.num.keys();
 
   ngOnInit(): void {
-    console.log('revBox :>> ', this.revBox[0].number);
+    // console.log('revBox :>> ', parseInt(this.revBox[0].number));
   }
 }

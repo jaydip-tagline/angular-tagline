@@ -1,138 +1,22 @@
 import { Component, NgModule, VERSION } from '@angular/core';
-
-interface Headtextval {
-  title1: string;
-  title2: string;
-  title3: string;
-  title4: string;
-  description1: string;
-  description2: string;
-  button: string;
-  image: string;
-}
-interface Servicesval {
-  header: string;
-  title1: string;
-  title2: string;
-  title3: string;
-  title4: string;
-  title5: string;
-  title6: string;
-}
-
-interface Divcon2 {
-  image: string;
-  title: string;
-  description: string;
-  button: string;
-}
-
-interface HeadervalData {
-  aboutUs: string;
-  hireDev: string;
-  technology: string;
-  industry: string;
-}
-
-interface Contentexpval {
-  title: string;
-  description: string;
-  button: string;
-}
-
-interface Taglinewhyheadval {
-  header: string;
-  title1: string;
-  title2: string;
-  title3: string;
-  title4: string;
-  title5: string;
-}
-
-interface Fulldiv1val {
-  iamge: string;
-  title: string;
-  description: string;
-}
-
-interface Technologiesval {
-  header: string;
-  title: string;
-  type1: string;
-  type2: string;
-}
-interface Backendval {
-  image: string;
-  title: string;
-}
-
-interface Imgnumflexval {
-  image: string;
-  title1: string;
-  title2: string;
-  description: string;
-}
-
-interface Revboxval {
-  number: string;
-  review: string;
-  name: string;
-  verify: string;
-}
-
-interface Awardsval {
-  header1: string;
-  header2: string;
-}
-
-interface Awardimageval {
-  image1: string;
-  image2: string;
-  image3: string;
-  image4: string;
-  image5: string;
-}
-
-interface Blogval {
-  btitle?: string;
-  image: string;
-  styleData: string;
-  button1: string;
-  date: string;
-  title: string;
-  descrption: string;
-  button2: string;
-}
-
-interface Contactusval {
-  header1: string;
-  header2: string;
-}
-
-interface Placeval {
-  country: string;
-  address: string;
-  number: string;
-  email?: string;
-}
-
-interface Divisionval {
-  title: string;
-  website: string;
-  number: string;
-}
-
-interface Firstfooterval {
-  header: string;
-  title1: string;
-  title2: string;
-  title3: string;
-  title4: string;
-  title5: string;
-  title6: string;
-  title7: string;
-  title8: string;
-}
+import {
+  Awardsval,
+  Backendval,
+  Blogval,
+  Contactusval,
+  Contentexpval,
+  Divcon2,
+  Divisionval,
+  Firstfooterval,
+  Fulldiv1val,
+  Headtextval,
+  Imgnumflexval,
+  Placeval,
+  Revboxval,
+  Servicesval,
+  Taglinewhyheadval,
+  Technologiesval,
+} from './common';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -409,14 +293,14 @@ export class AppComponent {
 
   revboxlist: Revboxval[] = [
     {
-      number: '5.0',
+      number: 5.0,
       review: 'Everything always turns out perfectly done.',
       name: 'IT & Computer Scientist, Self-Employed',
       verify: 'Verified Review',
     },
 
     {
-      number: '5.0',
+      number: 1.5,
       review:
         'They understand complex technical requirements, and they have a team that quickly gets up to speed.',
       name: 'Founder, Cimpro.io',
@@ -424,7 +308,7 @@ export class AppComponent {
     },
 
     {
-      number: '5.0',
+      number: 3.0,
       review:
         '…they’re able to tackle pretty much everything you throw at them.',
       name: 'CEO, Promoprep',
@@ -432,7 +316,7 @@ export class AppComponent {
     },
 
     {
-      number: '5.0',
+      number: 2.3,
       review:
         'When things go wrong, they were good at adapting and problem solving on the fly.',
       name: 'CEO, SupplementSnoop',
@@ -440,7 +324,7 @@ export class AppComponent {
     },
 
     {
-      number: '5.0',
+      number: 5.0,
       review:
         'The team takes up new challenges and finishes the project on time.',
       name: 'Software Architect, Specialty Finance Company',
@@ -448,7 +332,7 @@ export class AppComponent {
     },
 
     {
-      number: '5.0',
+      number: 4.5,
       review:
         "We are getting close to launch now and it's been a tremendous help to have their developers on my team.",
       name: 'Owner, e-Commerce Support Company',

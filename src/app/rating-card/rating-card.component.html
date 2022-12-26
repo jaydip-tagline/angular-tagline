@@ -3,9 +3,7 @@
         <div class="rating">
             <h3>{{revBoxData.number}}</h3>
             <div class="icon">
-                <!-- <div *ngFor="let number of [0]"> -->
-                    <ngb-rating [max]="5" [(rate)]="starRating" [readonly]="false"></ngb-rating>  
-                <!-- </div> -->
+                    <ngb-rating [(rate)]="revBoxData.number" [readonly]="false" [max]="5"></ngb-rating>
                 <!-- <i class="bi bi-star" ></i> -->
                 <!-- <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
