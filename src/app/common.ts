@@ -121,3 +121,9 @@ export interface Firstfooterval {
   title7: string;
   title8: string;
 }
+
+export interface Contentexpval1 {
+  title: string;
+  description: string;
+  button: string;
+}

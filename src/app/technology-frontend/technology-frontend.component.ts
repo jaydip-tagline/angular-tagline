@@ -1,10 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
-interface Backendval {
-  image: string;
-  title: string;
-}
-
+import { Backendval } from '../common';
 @Component({
   selector: 'app-technology-frontend',
   templateUrl: './technology-frontend.component.html',

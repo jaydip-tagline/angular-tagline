@@ -1,11 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
-interface Divcon2 {
-  image: string;
-  title: string;
-  description: string;
-  button: string;
-}
+import { Divcon2 } from '../common';
 
 @Component({
   selector: 'app-our-service',

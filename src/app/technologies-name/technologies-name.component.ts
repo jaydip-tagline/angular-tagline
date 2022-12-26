@@ -1,9 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
-interface Backendval {
-  image: string;
-  title: string;
-}
+import { Backendval } from '../common';
 
 @Component({
   selector: 'app-technologies-name',

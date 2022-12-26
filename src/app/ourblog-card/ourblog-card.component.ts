@@ -1,15 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
-interface Blogval {
-  btitle?: string;
-  image: string;
-  styleData: string;
-  button1: string;
-  date: string;
-  title: string;
-  descrption: string;
-  button2: string;
-}
+import { Blogval } from '../common';
 
 @Component({
   selector: 'app-ourblog-card',

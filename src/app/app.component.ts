@@ -293,14 +293,14 @@ export class AppComponent {
 
   revboxlist: Revboxval[] = [
     {
-      number: 5.0,
+      number: 5,
       review: 'Everything always turns out perfectly done.',
       name: 'IT & Computer Scientist, Self-Employed',
       verify: 'Verified Review',
     },
 
     {
-      number: 1.5,
+      number: 4,
       review:
         'They understand complex technical requirements, and they have a team that quickly gets up to speed.',
       name: 'Founder, Cimpro.io',
@@ -308,7 +308,7 @@ export class AppComponent {
     },
 
     {
-      number: 3.0,
+      number: 3,
       review:
         '…they’re able to tackle pretty much everything you throw at them.',
       name: 'CEO, Promoprep',
@@ -316,7 +316,7 @@ export class AppComponent {
     },
 
     {
-      number: 2.3,
+      number: 5,
       review:
         'When things go wrong, they were good at adapting and problem solving on the fly.',
       name: 'CEO, SupplementSnoop',
@@ -324,7 +324,7 @@ export class AppComponent {
     },
 
     {
-      number: 5.0,
+      number: 3,
       review:
         'The team takes up new challenges and finishes the project on time.',
       name: 'Software Architect, Specialty Finance Company',
@@ -332,7 +332,7 @@ export class AppComponent {
     },
 
     {
-      number: 4.5,
+      number: 4,
       review:
         "We are getting close to launch now and it's been a tremendous help to have their developers on my team.",
       name: 'Owner, e-Commerce Support Company',

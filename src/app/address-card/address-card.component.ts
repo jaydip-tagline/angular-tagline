@@ -1,12 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
-interface Placeval {
-  country: string;
-  address: string;
-  number: string;
-  email?: string;
-}
-
+import { Placeval } from '../common';
 @Component({
   selector: 'app-address-card',
   templateUrl: './address-card.component.html',

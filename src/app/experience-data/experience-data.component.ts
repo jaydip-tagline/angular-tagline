@@ -1,10 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
-interface Fulldiv1val {
-  iamge: string;
-  title: string;
-  description: string;
-}
+import { Fulldiv1val } from '../common';
 
 @Component({
   selector: 'app-experience-data',

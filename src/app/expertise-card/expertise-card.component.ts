@@ -1,11 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
-interface Imgnumflexval {
-  image: string;
-  title1: string;
-  title2: string;
-  description: string;
-}
+import { Imgnumflexval } from '../common';
 
 @Component({
   selector: 'app-expertise-card',

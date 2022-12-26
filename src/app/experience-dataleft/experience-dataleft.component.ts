@@ -1,10 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
-interface Contentexpval1 {
-  title: string;
-  description: string;
-  button: string;
-}
+import { Contentexpval1 } from '../common';
 
 @Component({
   selector: 'app-experience-dataleft',
