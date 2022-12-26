@@ -1,0 +1,13 @@
+<div class="footer">
+    <div class="division">
+        <div>
+            <div class="hr" *ngFor="let inquiryList of inqiryData">
+                <h3>{{inquiryList.title}}</h3>
+                <ul>
+                    <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp; {{inquiryList.website}}</a></li>
+                    <li><a href=""><i class="bi bi-envelope-fill"></i>&nbsp; {{inquiryList.number}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
