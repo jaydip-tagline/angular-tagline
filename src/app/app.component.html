@@ -85,6 +85,7 @@
 </div>
 
 
+
 <!-- ____________________________________________________________________ -->
 
 <h1 style="text-align: center;margin: 40px;font-size: 2rem; margin-bottom: 0;">{{technologies.header}}</h1>
@@ -158,7 +159,8 @@
     <h1>{{awards.header1}}<br>{{awards.header2}}</h1>
     <!-- </div> -->
     <div class="awardimage">
-        <app-award-card [awardData]="awardimage" ></app-award-card>
+        <app-award-card [awardData]="awardimage" >
+        </app-award-card>
     </div>
 
 </div>
@@ -214,37 +216,41 @@
     </div>
     <div class="division">
         <div>
-            <div class="hr">
+            <app-inquiry-footer [inqiryData]="divisionlist"></app-inquiry-footer>
+            <!-- <div class="hr" *ngFor="let division of divisionlist">
                 <h3>{{division.title}}</h3>
                 <ul>
                     <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp; {{division.website}}</a></li>
                     <li><a href=""><i class="bi bi-envelope-fill"></i>&nbsp; {{division.number}}</a></li>
                 </ul>
-            </div>
-            <div class="sales">
+            </div> -->
+            <!-- <div class="sales">
                 <h3>{{division1.title}}</h3>
                 <ul>
                     <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp; {{division1.website}}</a></li>
                     <li><a href=""><i class="bi bi-envelope-fill"></i>&nbsp; {{division1.number}}</a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         <div class="help">
             <h3>{{div2title}}</h3>
             <ul>
-                <li *ngFor="let divabs of division2list"><a href=""><i class="bi bi-telephone-fill" ></i>&nbsp;{{divabs}}</a></li>
+                <app-helpadvice-footer [helpData]="division2list"></app-helpadvice-footer>
+                <!-- <li *ngFor="let divabs of division2list"><a href=""><i class="bi bi-telephone-fill" ></i>&nbsp;{{divabs}}</a></li> -->
             </ul>
         </div>
         <div class="service">
             <h3>{{div3title}}</h3>
             <ul>
-                <li *ngFor="let division3 of division3list"><a href="">{{division3}}</a></li>
+                <app-services-footer [serviceData]="division3list"></app-services-footer>
+                <!-- <li *ngFor="let division3 of division3list"><a href="">{{division3}}</a></li> -->
             </ul>
         </div>
         <div class="hire">
             <h3>{{div4title}}</h3>
             <ul>
-                <li *ngFor="let division4 of division4list"><a href="">{{division4}}</a></li>
+                <app-hiredevelopers-footer [developerData]="division4list"></app-hiredevelopers-footer>
+                <!-- <li *ngFor="let division4 of division4list"><a href="">{{division4}}</a></li> -->
             </ul>
         </div>
 

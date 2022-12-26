@@ -16,7 +16,12 @@ import { RatingCardComponent } from './rating-card/rating-card.component';
 import { OurblogCardComponent } from './ourblog-card/ourblog-card.component';
 import { AddressCardComponent } from './address-card/address-card.component';
 import { AwardCardComponent } from './award-card/award-card.component';
-
+import { HelpadviceFooterComponent } from './helpadvice-footer/helpadvice-footer.component';
+import { ServicesFooterComponent } from './services-footer/services-footer.component';
+import { HiredevelopersFooterComponent } from './hiredevelopers-footer/hiredevelopers-footer.component';
+import { InquiryFooterComponent } from './inquiry-footer/inquiry-footer.component';
+import { StarRatingComponent } from './star-rating/star-rating.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,8 +39,13 @@ import { AwardCardComponent } from './award-card/award-card.component';
     OurblogCardComponent,
 
     AwardCardComponent,
+    HelpadviceFooterComponent,
+    ServicesFooterComponent,
+    HiredevelopersFooterComponent,
+    InquiryFooterComponent,
+    StarRatingComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })

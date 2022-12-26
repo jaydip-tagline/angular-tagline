@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgModule, VERSION } from '@angular/core';
 
 interface Headtextval {
   title1: string;
@@ -139,6 +139,7 @@ interface Firstfooterval {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  starRating: number = 0;
   title = 'angular_tagline';
 
   // logo: string = '../assets/image/tagline.png';
@@ -529,17 +530,18 @@ export class AppComponent {
 
   place1: string = 'solutions@taglineinfotech.com';
 
-  division: Divisionval = {
-    title: 'HR Inquiry',
-    website: 'hr@taglineinfotech.com',
-    number: '+91 6354362521',
-  };
-
-  division1: Divisionval = {
-    title: 'Sales Inquiry',
-    website: 'solutions@taglineinfotech.com',
-    number: 'Tagline infotech',
-  };
+  divisionlist: Divisionval[] = [
+    {
+      title: 'HR Inquiry',
+      website: 'hr@taglineinfotech.com',
+      number: '+91 6354362521',
+    },
+    {
+      title: 'Sales Inquiry',
+      website: 'solutions@taglineinfotech.com',
+      number: 'Tagline infotech',
+    },
+  ];
 
   div2title: string = 'Help & Advice';
   division2list: string[] = [
@@ -571,6 +573,8 @@ export class AppComponent {
     title7: ' All rights reserved by ',
     title8: 'Tagline Infotech LLP',
   };
+
+  numbers: number[] = [1, 2, 3, 4, 5];
 
   div4title: string = 'Hire Developers';
   division4list: string[] = [

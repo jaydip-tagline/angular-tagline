@@ -13,8 +13,15 @@ interface Revboxval {
   styleUrls: ['./rating-card.component.scss'],
 })
 export class RatingCardComponent implements OnInit {
+  starRating: number = 0;
   @Input() revBox!: Revboxval[];
   constructor() {}
 
-  ngOnInit(): void {}
+  // num = Array(this.revBox.number)
+  // num: String[] = Array(this.revBox[0].number);
+  // abd = this.num.keys();
+
+  ngOnInit(): void {
+    console.log('revBox :>> ', this.revBox[0].number);
+  }
 }
