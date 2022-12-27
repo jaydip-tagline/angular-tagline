@@ -1,5 +1,7 @@
 <div class="services"> 
     <div class="boxes">
+        <div style="width: 32%;">
+        <app-rightoffer-service></app-rightoffer-service></div>
         <div class="divcontent divcontent2" *ngFor="let service1 of serviceData">
             <div class="flex">
                 <img [src]="service1.image">
@@ -8,5 +10,6 @@
             <p>{{service1.description}}</p>
             <a href="#">{{service1.button}}</a>
         </div>
+        <app-dropleft-service></app-dropleft-service>
     </div>
 </div>

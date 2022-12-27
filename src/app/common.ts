@@ -127,3 +127,9 @@ export interface Contentexpval1 {
   description: string;
   button: string;
 }
+
+export interface Rightoffer {
+  title1: string;
+  title2: string;
+  title3: string;
+}

@@ -22,6 +22,9 @@ import { HiredevelopersFooterComponent } from './hiredevelopers-footer/hiredevel
 import { InquiryFooterComponent } from './inquiry-footer/inquiry-footer.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RightofferServiceComponent } from './rightoffer-service/rightoffer-service.component';
+import { DropleftServiceComponent } from './dropleft-service/dropleft-service.component';
+import { ExpertiseLastComponent } from './expertise-last/expertise-last.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +47,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HiredevelopersFooterComponent,
     InquiryFooterComponent,
     StarRatingComponent,
+    RightofferServiceComponent,
+    DropleftServiceComponent,
+    ExpertiseLastComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
