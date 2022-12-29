@@ -26,6 +26,7 @@ export class AppComponent {
   ];
 
   ourServices: string = 'Our Services';
+  ourBlogs: string = 'Our Blogs';
 
   Headtext: Headtextval = {
     title1: 'Software Development Company',
