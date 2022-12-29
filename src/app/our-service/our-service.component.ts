@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Divcon2 } from '../common';
+import { MainService } from '../Services/main.service';
 
 @Component({
   selector: 'app-our-service',
@@ -7,8 +8,13 @@ import { Divcon2 } from '../common';
   styleUrls: ['./our-service.component.scss'],
 })
 export class OurServiceComponent implements OnInit {
-  @Input() serviceData!: Divcon2[];
-  constructor() {}
+  // @Input() serviceData!: Divcon2[];
+  public data!: Divcon2[];
 
-  ngOnInit(): void {}
+  constructor(private mainService: MainService) {}
+
+  ngOnInit(): void {
+    this.data = this.mainService.input();
+    console.log('this.data :>> ', this.data);
+  }
 }
