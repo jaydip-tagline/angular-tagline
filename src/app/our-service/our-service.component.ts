@@ -14,7 +14,7 @@ export class OurServiceComponent implements OnInit {
   constructor(private mainService: MainService) {}
 
   ngOnInit(): void {
-    this.data = this.mainService.input();
+    this.data = this.mainService.servicelist;
     console.log('this.data :>> ', this.data);
   }
 }

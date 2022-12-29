@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Divcon2 } from '../common';
+import { Divcon2, Fulldiv1val } from '../common';
 
 @Injectable({
   providedIn: 'root',
@@ -49,8 +49,4 @@ export class MainService {
       button: 'Learn More ->',
     },
   ];
-
-  input(): Divcon2[] {
-    return this.servicelist;
-  }
 }
