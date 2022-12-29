@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { InquiryfooterService } from '../Services/inquiryfooter.service';
 
 @Component({
   selector: 'app-helpadvice-footer',
@@ -6,8 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./helpadvice-footer.component.scss'],
 })
 export class HelpadviceFooterComponent implements OnInit {
-  @Input() helpData!: string[];
-  constructor() {}
-
-  ngOnInit(): void {}
+  // @Input() helpData!: string[];
+  constructor(private inquiryfooterService: InquiryfooterService) {}
+  public helpData!: string[];
+  ngOnInit(): void {
+    this.helpData = this.inquiryfooterService.division2list;
+  }
 }

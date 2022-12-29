@@ -1,9 +1,5 @@
 <div class="topbar">
-
-    
     <app-head-nav [headDataList]="HeaderData"></app-head-nav>
-
-
     <div class="headtext">
         <h1>{{Headtext.title1}} <br> {{Headtext.title2}}</h1>
         <h1>{{Headtext.title3}} <span>{{Headtext.title4}} </span></h1>
@@ -17,74 +13,26 @@
 
 
 <div class="services">
-    <!-- <h1>{{services.header}}</h1> -->
-    <h1>Our Services</h1>
+    <h1>{{ourServices}}</h1>
     <span class="headerline"></span>
     
     <div class="boxes">
-        <!-- <div class="divcontent divcontent1" style="border: none;">
-            <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{services.title1}}<br> <span
-                    style="font-weight: bolder; font-size: 60px;">{{services.title2}}</span> <br> {{services.title3}}</h1>
-        </div>  -->
-
         <app-our-service></app-our-service>
-
-       <!-- <div class="divcontent divcontent7">
-            <h2>{{services.title4}}<span style="font-weight: bold;">{{services.title5}}</span></h2>
-            <button>{{services.title6}}</button>
-        </div> -->
     </div>
 </div>
 
 <!-- ___________________________________________________________ -->
-<div class="experience">
-
-    <!-- <div class="contentexp">
-        <h2>{{contentexp.title}}</h2>
-        <p>{{contentexp.description}}</p>
-        <button>{{contentexp.button}}</button>
-    </div> -->
-    
+<div class="experience">   
     <app-experience-dataleft [exprLeft]="contentexp"></app-experience-dataleft>
-
     <span>
         <img [src]="imageWoman" height="490">
     </span>
-
-
-
     <div class="numberexp">
-
         <div class="fulldiv1">
             <app-experience-data></app-experience-data>
-            <!-- <div class="div1" *ngFor="let fulldiv1 of fulldiv1list">
-                <img [src]="fulldiv1.iamge">
-                <h1>{{fulldiv1.title}}</h1>
-                <h5>{{fulldiv1.description}}</h5>
-            </div> -->
-            <!-- <div class="div2">
-                <img [src]="fulldiv2.iamge">
-                <h1>{{fulldiv2.title}}</h1>
-                <h5>{{fulldiv2.description}}</h5>
-            </div>
-        </div>
-
-        <div class="fulldiv2">
-            <div class="div3">
-                <img [src]="fulldiv3.iamge">
-                <h1>{{fulldiv3.title}}</h1>
-                <h5>{{fulldiv3.description}}</h5>
-            </div>
-            <div class="div4">
-                <img [src]="fulldiv4.iamge">
-                <h1>{{fulldiv4.title}}</h1>
-                <h5>{{fulldiv4.description}}</h5>
-            </div> -->
         </div>
     </div>
 </div>
-
-
 
 <!-- ____________________________________________________________________ -->
 
@@ -93,7 +41,6 @@
 <div class="row">
     <div class="menu">
         <ul>
-            <!-- <li class="active" *ngFor="let menu of menulist"><a href="">{{menu}}</a></li> -->
              <app-technology-sidebar [menuData]="menulist"></app-technology-sidebar> 
         </ul>
     </div>
@@ -104,7 +51,6 @@
             <div class="backend">
                 <app-technologies-name></app-technologies-name>
             </div>
-
             <h2>{{technologies.type2}}</h2>
             <div class="frontend">
                 <app-technology-frontend></app-technology-frontend>
@@ -121,19 +67,6 @@
 <p class="taglinewhyp">{{taglinewhypval}}</p>
 <div class="empowers">
     <app-expertise-card></app-expertise-card>
-    <!-- <div class="empowerbox" *ngFor="let imgnumflex of imgnumflexlist">
-        <div class="imgnumflex">
-            <img [src]="imgnumflex.image">
-            <h1>{{imgnumflex.title1}}</h1>
-        </div>
-        <h2>{{imgnumflex.title2}}</h2>
-        <p>{{imgnumflex.description}}</p>
-    </div> -->
-
-    <!-- <div class="empowerbox lastempowerbox">
-        <h1><span>{{taglinewhyhead.title1}}</span>{{taglinewhyhead.title2}}<span>{{taglinewhyhead.title3}}</span>{{taglinewhyhead.title4}}</h1>
-        <button>{{taglinewhyhead.title5}}</button>
-    </div> -->
 </div>
 
 <!-- ____________________________________________________________________ -->
@@ -155,14 +88,11 @@
 
 
 <div class="awards">
-    <!-- <div class="awardhead"> -->
     <h1>{{awards.header1}}<br>{{awards.header2}}</h1>
-    <!-- </div> -->
     <div class="awardimage">
         <app-award-card [awardData]="awardimage" >
         </app-award-card>
     </div>
-
 </div>
 
 <!-- ____________________________________________________________________ -->
@@ -180,7 +110,6 @@
 <div class="contactus">
     <div class="formdetail">
         <div class="address">
-
             <h4>{{contactus.header1}}</h4>
             <app-address-card></app-address-card>
             <div class="place">
@@ -216,44 +145,26 @@
     </div>
     <div class="division">
         <div>
-            <app-inquiry-footer [inqiryData]="divisionlist"></app-inquiry-footer>
-            <!-- <div class="hr" *ngFor="let division of divisionlist">
-                <h3>{{division.title}}</h3>
-                <ul>
-                    <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp; {{division.website}}</a></li>
-                    <li><a href=""><i class="bi bi-envelope-fill"></i>&nbsp; {{division.number}}</a></li>
-                </ul>
-            </div> -->
-            <!-- <div class="sales">
-                <h3>{{division1.title}}</h3>
-                <ul>
-                    <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp; {{division1.website}}</a></li>
-                    <li><a href=""><i class="bi bi-envelope-fill"></i>&nbsp; {{division1.number}}</a></li>
-                </ul>
-            </div> -->
+            <app-inquiry-footer></app-inquiry-footer>
         </div>
         <div class="help">
             <h3>{{div2title}}</h3>
             <ul>
-                <app-helpadvice-footer [helpData]="division2list"></app-helpadvice-footer>
-                <!-- <li *ngFor="let divabs of division2list"><a href=""><i class="bi bi-telephone-fill" ></i>&nbsp;{{divabs}}</a></li> -->
+                <app-helpadvice-footer></app-helpadvice-footer>
             </ul>
         </div>
         <div class="service">
             <h3>{{div3title}}</h3>
             <ul>
-                <app-services-footer [serviceData]="division3list"></app-services-footer>
-                <!-- <li *ngFor="let division3 of division3list"><a href="">{{division3}}</a></li> -->
+                <app-services-footer></app-services-footer>
             </ul>
         </div>
         <div class="hire">
             <h3>{{div4title}}</h3>
             <ul>
-                <app-hiredevelopers-footer [developerData]="division4list"></app-hiredevelopers-footer>
-                <!-- <li *ngFor="let division4 of division4list"><a href="">{{division4}}</a></li> -->
+                <app-hiredevelopers-footer></app-hiredevelopers-footer>
             </ul>
         </div>
-
     </div>
 
     <div class="lastfooterdiv">

@@ -1,18 +1,10 @@
-import { Component, NgModule, VERSION } from '@angular/core';
+import { Component } from '@angular/core';
 import {
   Awardsval,
-  Backendval,
-  Blogval,
   Contactusval,
   Contentexpval,
-  Divcon2,
-  Divisionval,
   Firstfooterval,
-  Fulldiv1val,
   Headtextval,
-  Imgnumflexval,
-  Placeval,
-  Revboxval,
   Servicesval,
   Taglinewhyheadval,
   Technologiesval,
@@ -25,10 +17,6 @@ import {
 export class AppComponent {
   starRating: number = 0;
   title = 'angular_tagline';
-
-  // logo: string = '../assets/image/tagline.png';
-
-  // casestudyData: string = 'Case Study';
   HeaderData: string[] = [
     'Case Study',
     'About Us',
@@ -36,6 +24,8 @@ export class AppComponent {
     'Technology',
     'Industry',
   ];
+
+  ourServices: string = 'Our Services';
 
   Headtext: Headtextval = {
     title1: 'Software Development Company',
@@ -137,37 +127,9 @@ export class AppComponent {
 
   place1: string = 'solutions@taglineinfotech.com';
 
-  divisionlist: Divisionval[] = [
-    {
-      title: 'HR Inquiry',
-      website: 'hr@taglineinfotech.com',
-      number: '+91 6354362521',
-    },
-    {
-      title: 'Sales Inquiry',
-      website: 'solutions@taglineinfotech.com',
-      number: 'Tagline infotech',
-    },
-  ];
-
   div2title: string = 'Help & Advice';
-  division2list: string[] = [
-    'Career',
-    'About Us',
-    'Contact Us',
-    'Blog',
-    'Privacy pilicy',
-    'Sitemap',
-  ];
 
   div3title: string = 'Services';
-  division3list: string[] = [
-    'Mobile',
-    'web Development',
-    'Web Design',
-    'UI / UX Design',
-    'Digital Marketing',
-  ];
 
   firstfooter: Firstfooterval = {
     header: 'Get latest from Tagline Infotech',
@@ -184,12 +146,4 @@ export class AppComponent {
   numbers: number[] = [1, 2, 3, 4, 5];
 
   div4title: string = 'Hire Developers';
-  division4list: string[] = [
-    'Hire Python Developer',
-    'Hire Angular Developer',
-    'Hire ROR Developer',
-    'Hire Flutter Developer',
-    'Hire React Js Developer',
-    'Hire React Native Developer',
-  ];
 }
