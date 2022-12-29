@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Revboxval } from '../common';
+import { RatingService } from '../Services/rating.service';
 
 @Component({
   selector: 'app-rating-card',
@@ -7,9 +8,11 @@ import { Revboxval } from '../common';
   styleUrls: ['./rating-card.component.scss'],
 })
 export class RatingCardComponent implements OnInit {
-  @Input() revBox!: Revboxval[];
+  // @Input() revBox!: Revboxval[];
   starRating: number = 0;
-  constructor() {}
-
-  ngOnInit(): void {}
+  constructor(private ratingService: RatingService) {}
+  public ratingData!: Revboxval[];
+  ngOnInit(): void {
+    this.ratingData = this.ratingService.revboxlist;
+  }
 }

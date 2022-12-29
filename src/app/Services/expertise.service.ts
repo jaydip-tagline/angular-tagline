@@ -6,7 +6,7 @@ import { Imgnumflexval } from '../common';
 })
 export class ExpertiseService {
   constructor() {}
-  imgnumflexlist: Imgnumflexval[] = [
+  public imgnumflexlist: Imgnumflexval[] = [
     {
       image: '../assets/image/choose-roadmap.png',
       title1: '01',
